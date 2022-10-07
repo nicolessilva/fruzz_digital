@@ -18,7 +18,11 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 125.0),
+            const SizedBox(height: 100.0),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.keyboard_arrow_left),
+            ),
             const Text(
               'Welcome back! Glad\nto see you, Again!',
               style: TextStyle(
