@@ -19,15 +19,20 @@ class _LoginPageState extends State<LoginPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 70.0),
-            Container(
-              width: 40.0,
-              height: 40.0,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12.0),
-                  border: Border.all(
-                    color: const Color(0xFFE8ECF4),
-                  )),
-              child: const Icon(Icons.keyboard_arrow_left),
+            InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Container(
+                width: 40.0,
+                height: 40.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12.0),
+                    border: Border.all(
+                      color: const Color(0xFFE8ECF4),
+                    )),
+                child: const Icon(Icons.keyboard_arrow_left),
+              ),
             ),
             const SizedBox(height: 28.0),
             const Text(
